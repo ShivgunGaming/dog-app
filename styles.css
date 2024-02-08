@@ -1,0 +1,100 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+    background: url('https://media.istockphoto.com/id/1388281684/vector/seamless-dog-pattern-with-paw-prints-bones-hearts-and-balls-cat-foot-texture-pattern-with.jpg?s=612x612&w=0&k=20&c=St1dISSnU7zobbE4y1VWD7hhEnWcUGriSVZ5ocoSYWU=') fixed;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* Changed to white for better readability */
+    border-radius: 20px; /* Increased border radius for a smoother look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow for depth */
+    padding: 40px; /* Increased padding for better spacing */
+    max-width: 600px; /* Increased max-width for larger screens */
+    width: 90%;
+    overflow-y: auto;
+    max-height: 90vh; /* Adjusted max-height for better scroll behavior */
+    position: relative; /* Added relative positioning */
+}
+
+.header h1 {
+    color: #333;
+    font-size: 32px; /* Increased font size for emphasis */
+    margin-top: 0;
+    margin-bottom: 20px; /* Added margin bottom for better spacing */
+}
+
+#dogImage {
+    width: 100%;
+    max-width: 400px;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 20px 0;
+    border-radius: 12px; /* Increased border radius for smoother edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    padding: 14px 28px; /* Increased padding for better touch targets */
+    font-size: 18px; /* Increased font size for better visibility */
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px; /* Increased border radius for a rounded look */
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+#loadingSpinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 48px; /* Increased spinner size for better visibility */
+    height: 48px; /* Increased spinner size for better visibility */
+    margin: 40px auto; /* Adjusted margin for better centering */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#breedInfo {
+    color: #555;
+    font-size: 16px; /* Increased font size for better readability */
+    margin-top: 20px; /* Increased margin top for better spacing */
+}
+
+#likedDogsContainer {
+    margin-top: 40px; /* Increased margin top for better spacing */
+}
+
+#likesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#likesList img {
+    width: 120px; /* Increased image size for better visibility */
+    height: 100px; /* Adjusted image height for better aspect ratio */
+    object-fit: cover;
+    margin: 10px; /* Increased margin for better spacing */
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}

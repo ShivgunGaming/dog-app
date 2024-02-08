@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adorable Dogs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Updated CSS styles */
+        /* Example: */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            width: 90%;
+            margin: 20px auto;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        .header h1 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Add more styles as needed */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Doggy Doggy Doo</h1>
+        </div>
+        <div class="content">
+            <img id="dogImage" src="" alt="Random Dog Image">
+            <br>
+            <button id="generateButton" class="button">🐕</button>
+            <button id="likeButton" class="button">👍</button>
+            <div id="loadingSpinner" class="hidden"></div>
+            <p id="breedInfo" class="hidden"></p>
+        </div>
+        <div id="likedDogsContainer" class="hidden">
+            <h2>Liked Dogs</h2>
+            <div id="likesList"></div>
+            <button id="closeLikesButton" class="button">❌</button>
+        </div>
+        <button id="viewLikedDogsButton" class="button">🕵️</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
